@@ -4,7 +4,6 @@
 //   Переработано для Microsoft Visual Studio 2008 Сысоевым А.В. (19.04.2015)
 //
 // Битовое поле
-
 #include "tbitfield.h"
 
 TBitField::TBitField(int len)
@@ -70,16 +69,29 @@ int TBitField::GetBit(const int n) const // получить значение б
 
 TBitField& TBitField::operator=(const TBitField &bf) // присваивание
 {
+	TBitField tmp(BitLen);
+	for (int i = 0; i < MemLen; i++)
+		tmp.SetBit(this->GetBit(i));
+
+	return tmp;
 }
 
-int TBitField::operator==(const TBitField &bf) const // сравнение
+bool TBitField::operator==(const TBitField &bf) const // сравнение
 {
-  return 0;
+	TBitField tmp(BitLen);
+	if (BitLen != bf.GetLength())
+		return 0;
+
+	for (int i = 0; i < bf.MemLen; i++)
+		if (this->pMem[i] != bf.pMem[i])
+			return 0;
+
+	return 1;
 }
 
-int TBitField::operator!=(const TBitField &bf) const // сравнение
+bool TBitField::operator!=(const TBitField &bf) const // сравнение
 {
-  return 0;
+	return !(*this == bf);
 }
 
 TBitField& TBitField::operator|(const TBitField &bf) // операция "или"
