@@ -115,12 +115,20 @@ bool TBitField::operator!=(const TBitField &bf) const // сравнение
 
 TBitField TBitField::operator|(const TBitField &bf) // операция "или"
 {
-	int max = bf.GetLength() >= BitLen ? bf.GetLength() : BitLen;
-	TBitField tmp(max);
+	TBitField tmp(1);
+	if (bf.GetLength() > BitLen)
+	{
+		tmp = bf;
+	}
+	else
+	{
+		tmp = *this;
+	}
+	
 	for (int i = 0; i < BitLen && i < bf.GetLength(); i++)
 	{
 		if(GetBit(i) | bf.GetBit(i)==1)
-		tmp.SetBit(i);
+			tmp.SetBit(i);
 	}
 	return tmp;
 }
