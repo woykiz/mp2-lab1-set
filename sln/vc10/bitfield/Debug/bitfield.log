@@ -1,20 +1,4 @@
-﻿  tset.cpp
-  tbitfield.cpp
-  Создание кода...
-c:\users\iljuhin.i\documents\new\mp2-lab1-set\src\tbitfield.cpp(73): error C4716: TBitField::operator=: должна возвращать значение
-c:\users\iljuhin.i\documents\new\mp2-lab1-set\src\tbitfield.cpp(116): error C4716: operator>>: должна возвращать значение
-c:\users\iljuhin.i\documents\new\mp2-lab1-set\src\tbitfield.cpp(120): error C4716: operator<<: должна возвращать значение
-c:\users\iljuhin.i\documents\new\mp2-lab1-set\src\tbitfield.cpp(91): warning C4172: возвращение адреса локальной или временной переменной : tmp
-c:\users\iljuhin.i\documents\new\mp2-lab1-set\src\tbitfield.cpp(109): warning C4172: возвращение адреса локальной или временной переменной : tmp
-c:\users\iljuhin.i\documents\new\mp2-lab1-set\src\tbitfield.cpp(100): warning C4172: возвращение адреса локальной или временной переменной : tmp
-c:\users\iljuhin.i\documents\new\mp2-lab1-set\src\tset.cpp(26): error C4716: TSet::operator TBitField: должна возвращать значение
-c:\users\iljuhin.i\documents\new\mp2-lab1-set\src\tset.cpp(30): error C4716: TSet::GetMaxPower: должна возвращать значение
-c:\users\iljuhin.i\documents\new\mp2-lab1-set\src\tset.cpp(50): error C4716: TSet::operator=: должна возвращать значение
-c:\users\iljuhin.i\documents\new\mp2-lab1-set\src\tset.cpp(59): error C4716: TSet::operator!=: должна возвращать значение
-c:\users\iljuhin.i\documents\new\mp2-lab1-set\src\tset.cpp(67): error C4716: TSet::operator+: должна возвращать значение
-c:\users\iljuhin.i\documents\new\mp2-lab1-set\src\tset.cpp(63): error C4716: TSet::operator+: должна возвращать значение
-c:\users\iljuhin.i\documents\new\mp2-lab1-set\src\tset.cpp(71): error C4716: TSet::operator-: должна возвращать значение
-c:\users\iljuhin.i\documents\new\mp2-lab1-set\src\tset.cpp(79): error C4716: TSet::operator~: должна возвращать значение
-c:\users\iljuhin.i\documents\new\mp2-lab1-set\src\tset.cpp(89): error C4716: operator<<: должна возвращать значение
-c:\users\iljuhin.i\documents\new\mp2-lab1-set\src\tset.cpp(85): error C4716: operator>>: должна возвращать значение
-c:\users\iljuhin.i\documents\new\mp2-lab1-set\src\tset.cpp(75): error C4716: TSet::operator*: должна возвращать значение
+﻿  tbitfield.cpp
+d:\программирование\mp2-lab1-set\src\tbitfield.cpp(122): warning C4554: "|": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+d:\программирование\mp2-lab1-set\src\tbitfield.cpp(134): warning C4554: "&": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+  bitfield.vcxproj -> D:\программирование\mp2-lab1-set\sln\vc10\Debug\bitfield.lib
