@@ -1,0 +1,4 @@
+﻿  tbitfield.cpp
+c:\users\iljuhin.i\documents\mp2-lab1-set\src\tbitfield.cpp(130): warning C4554: "|": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+c:\users\iljuhin.i\documents\mp2-lab1-set\src\tbitfield.cpp(142): warning C4554: "&": проверьте приоритет операторов на ошибки; для уточнения приоритета используйте скобки
+  bitfield.vcxproj -> C:\Users\iljuhin.i\Documents\mp2-lab1-set\sln\vc10\Debug\bitfield.lib
